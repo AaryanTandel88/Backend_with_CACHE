@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "keyboard",
+    "price": 999
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "price": 19.99
+  },
+  {
+    "id": 3,
+    "name": "Simple monitor",
+    "price": 50000
+  },
+  {
+    "id": 4,
+    "name": "Mouse",
+    "price": 19
+  },
+  {
+    "id": 5,
+    "name": "color printer",
+    "price": 5000
+  },
+  {
+    "id": 6,
+    "name": "graphic-card",
+    "price": 12500
+  },
+  {
+    "id": 7,
+    "name": "cable",
+    "price": 350
+  }
+]
