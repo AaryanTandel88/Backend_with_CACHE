@@ -43,4 +43,4 @@ const validateProductRequest = (req, res, next) => {
     next()
 }
 
-module.exports = { validateProductRequest }
+module.exports = {cacheProductResponses, validateProductRequest }
