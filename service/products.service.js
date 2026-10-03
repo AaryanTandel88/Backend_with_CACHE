@@ -35,17 +35,6 @@ const createProduct = async ({ name, price }) => {
     return item
 }
 
-const replaceProduct = async (product) => {
-    const products = await productsDatabase.readDataAfterDelay()
-    const updated = products.map((item) => {
-        if (item.id === product.id) {
-            return product
-        }
-        return item
-    })
-    await productsDatabase.writeDataToFile(updated)
-    return product
-}
 
 const updateProduct = async (patch, id) => {
     const products = await productsDatabase.readDataAfterDelay()
@@ -62,6 +51,20 @@ const updateProduct = async (patch, id) => {
     await productsDatabase.writeDataToFile(products)
     return item
 }
+
+
+const replaceProduct = async (product) => {
+    const products = await productsDatabase.readDataAfterDelay()
+    const updated = products.map((item) => {
+        if (item.id === product.id) {
+            return product
+        }
+        return item
+    })
+    await productsDatabase.writeDataToFile(updated)
+    return product
+}
+
 
 const deleteProduct = async (id) => {
     const products = await productsDatabase.readDataAfterDelay()
